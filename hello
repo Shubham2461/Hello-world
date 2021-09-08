@@ -1,7 +1,7 @@
-<html>
- <head>
- </head>
- <body>
-   <h1>Hello World<h1>
- </body>
-</html>
+#!/bin/bash
+yum update -y
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+cd /var/www/html
+echo "<html><h1>Hello Team, Welcome To CodvaTechLabs</h1></html>"  >  index.html
